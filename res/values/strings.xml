@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">象棋分析</string>
+    <string name="auto_service_desc">用于「无障碍截屏」：绕过投屏授权弹窗，直接读取屏幕画面来识别棋盘。只在你自己开启本服务后才会生效。</string>
+</resources>

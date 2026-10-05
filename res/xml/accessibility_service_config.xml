@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ★ 这份源文件**不参与最终打包**。
+  aapt2 会丢掉 API24+ 的属性（canPerformGestures、canTakeScreenshot 都属于这类），
+  APK 里真正的 res/xml/accessibility_service_config.xml 是构建时由
+  `D:\dsh\apkwork\axml.mjs` 的 buildAccessibilityConfig() **手写 AXML 覆盖**的
+  （build-xiangqi.mjs 第 64-83 行）。改能力位要**两边一起改**，只改这里没用。
+  属性 ID 可用 `aapt2 dump resources platform34\android.jar | grep <名字>` 查。
+  canTakeScreenshot = 0x0101060f（API 30+）
+-->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeAllMask"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagDefault|flagIncludeNotImportantViews"
+    android:canPerformGestures="true"
+    android:canRetrieveWindowContent="true"
+    android:canTakeScreenshot="true"
+    android:description="@string/auto_service_desc"
+    android:isAccessibilityTool="false"
+    android:notificationTimeout="100" />
