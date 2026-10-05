@@ -92,5 +92,6 @@ node build-xiangqi.mjs
   - NNUE 权重数据来自 **Pika Xiangqi Zero** 项目（ODbL）
 - **ONNX Runtime**：MIT
 - **PaddleOCR PP-OCR 模型**：Apache-2.0
+- **本软件同样遵循**GNU GPL v3**协议**
 
 再分发时请保留上述许可声明与源码链接。
